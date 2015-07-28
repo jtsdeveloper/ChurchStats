@@ -1,0 +1,108 @@
+/* App: Church Stats
+/*styles.css*/
+
+body{
+    background-color: #45484B;
+    font-family: 'Oswald', sans-serif;
+    min-width: 320px;
+}
+
+header{
+    background-color:black;
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+      ),
+      url('../img/newchurch.png');
+      background-position: center;
+    height: 10em;
+    width: 100%;
+}
+.content{
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding-top: 1em;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+}
+
+header h1+p{
+    color: white;
+    text-align: center;
+    margin-top: .5em;
+    letter-spacing: 5px;
+}
+
+.container{
+    width: 49%;
+    min-height: 20em;
+    float: left;
+    background-color: #EEE6AB;
+    margin-top: 1em;
+}
+
+.content .container + .container{
+    background-color: #c5bc8e;
+    float: right;
+}
+
+label{
+    display: block;
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+}
+
+.content h3{
+    text-align: center;
+}
+
+#dateOutput, #attendanceOutput,
+#sermonOutput {
+    text-align: center;
+    padding-top: 2.75em;
+    font-size: 125%;
+}
+
+@media screen and (max-width:640px){
+    .content{
+        width: 100%;
+    }
+    
+    .container{
+        width: 100%;
+        float: none;
+    }
+}
+
+@media screen and (max-width:400px){
+    header{
+        height: 7em;
+    }
+    
+    header h1{
+        font-size: 125%;
+    }
+    
+    header h1+p{
+        font-size: 100%;
+    }
+}
