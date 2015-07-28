@@ -1,5 +1,5 @@
 # ChurchStats
-First project meant to strengthen html, css, javascript skills.
+My first project(!) meant to strengthen html, css and javascript skills.
 
 Church Stats is a simple web app that"
   (1) receives user input about a particular worship service
