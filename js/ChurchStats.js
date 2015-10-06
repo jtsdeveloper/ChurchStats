@@ -2,8 +2,6 @@
 
 var elForm,newDate,newAttendance,newSermon,newDateOutput,newAttendanceOutput,newSermonOutput;
 
-elForm = document.getElementById('stats');
-
 function printData(event){
     newDate = document.getElementById("date").value;
     newAttendance = document.getElementById("attendance").value;
@@ -19,5 +17,6 @@ function printData(event){
     event.preventDefault();
 }
 
+elForm = document.getElementById('stats');
 elForm.addEventListener('submit', printData, false);
 
